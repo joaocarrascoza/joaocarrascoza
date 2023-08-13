@@ -380,7 +380,7 @@ section{
 .footer-content .footer-navbar a{
     margin: 1rem 1.1rem 3rem;
     font-size: 1.8rem;
-    color: var(--subtext-color);
+    color: var(--bg-color);
     font-family: var(--sub-text);
 }
 
