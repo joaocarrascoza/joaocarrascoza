@@ -12,7 +12,7 @@
 
 :root {
     --bg-color: #fff;
-    --text-color: #045071;
+    --text-color: #1b57a2;
     --subtext-color: black;
     --span-color: #FA403B;
     --shadow-color: rgba(0,0,0,.2);
@@ -111,11 +111,10 @@ section{
     display: flex;
     align-items: center;
     /* padding: 10rem 25rem 0rem; */
-     background-image: url("");
-     background-size: cover;
-     background-repeat: no-repeat;
-     height: 100vh;
     justify-content: center;
+    background-image: url('/home-photo.png');
+    background-size: cover;
+    background-position: center;
 }
 
 .home .home-content {
@@ -139,7 +138,7 @@ section{
     font-size: 2rem;
     margin-bottom: 1rem;
     line-height: 1;
-    color: var(--subtext-color);
+    color: var(--bg-color);
     font-family: var(--title-text);
 }
 
@@ -186,7 +185,7 @@ section{
 }
 
 .about{
-    padding: 1rem 8rem;
+    padding: 10rem 8rem;
     min-height: auto;
     padding-bottom: 7rem;
 }
@@ -224,7 +223,7 @@ section{
 }
 
 .about-box p{
-    margin: 1rem 1.1rem 3rem;
+    margin: 1rem 1.1rem 1.4rem;
     font-size: 1.6rem;
     color: var(--subtext-color);
     font-family: var(--sub-text);
@@ -236,7 +235,7 @@ section{
 .services{
     padding: 8rem 8rem;
     min-height: auto;
-    padding-bottom: 7rem;
+    padding-bottom: 12rem;
 }
 
 .services h2{
@@ -250,14 +249,13 @@ section{
 .services .services-container{
     display: flex;
     justify-content: left;
-    align-items: center;
-    flex-wrap: wrap;
+    align-items: start;
     gap: 2rem;
 }
 
 .services-container .services-box{
-    flex: 1 1 auto;
-    max-width: 50rem;
+    width: 50%;
+    height: 50%;
     padding: 3em 2rem 4rem;
     border-radius: 0rem;
     box-shadow: 0 .1rem .5rem var(--shadow-color);
@@ -316,6 +314,14 @@ section{
     font-size: 2.6rem;
     color: var(--main-color-color);
     font-family: var(--title-text);
+}
+
+.projects-box h4{
+    margin: 1rem 1.1rem 1rem;
+    font-size: 2.4rem;
+    color: var(--main-color-color);
+    font-family: var(--title-text);
+    text-align: left;
 }
 
 .projects-box p{
@@ -397,7 +403,7 @@ section{
 
 @media(max-width: 724px){
     .home-content h1{
-        font-size: 4.8rem;
+        font-size: 5rem;
         font-weight: 700;
         margin-bottom: .3rem;
     }
@@ -455,7 +461,7 @@ section{
 
 @media(max-width: 600px){
     .about{
-        padding: 1rem 2rem;
+        padding: 12rem 2rem;
     }
 
     .services{
@@ -467,7 +473,7 @@ section{
     }
 }
 
-@media(max-width: 1334px){
+@media(max-width: 1020px){
     .about .about-container{
         flex-wrap: wrap;
     }
@@ -475,11 +481,19 @@ section{
     .about-container .about-box{
         flex: 1 1 auto;
     }
+
+    .services .services-container{
+        flex-wrap: wrap;
+    }
+
+    .services-container .services-box{
+        flex: 1 1 auto;
+    }
 }
 
 @media(max-width: 453px){
     .home-content h1{
-        font-size: 3.8rem;
+        font-size: 4rem;
     }
 
     .home-content h2{
