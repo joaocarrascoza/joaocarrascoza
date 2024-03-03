@@ -112,7 +112,7 @@ section{
     align-items: center;
     /* padding: 10rem 25rem 0rem; */
     justify-content: center;
-    background-image: url('/home-photo.png');
+    background-image: url('home-photo.png');
     background-size: cover;
     background-position: center;
 }
